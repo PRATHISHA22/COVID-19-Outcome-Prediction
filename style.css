@@ -1,0 +1,392 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e3f2fd,
+            #f8fbff
+        );
+
+    min-height: 100vh;
+
+    padding: 30px;
+}
+
+
+.container {
+
+    max-width: 1050px;
+
+    margin: auto;
+}
+
+
+/* HEADER */
+
+.header {
+
+    background:
+        linear-gradient(
+            135deg,
+            #1565c0,
+            #42a5f5
+        );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px;
+
+    border-radius: 22px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0,0,0,0.15);
+}
+
+
+.virus {
+
+    font-size: 55px;
+
+    margin-bottom: 10px;
+}
+
+
+.header h1 {
+
+    font-size: 32px;
+
+    margin-bottom: 10px;
+}
+
+
+.header p {
+
+    font-size: 16px;
+}
+
+
+.accuracy {
+
+    display: inline-block;
+
+    margin-top: 18px;
+
+    padding: 10px 20px;
+
+    background:
+        rgba(255,255,255,0.2);
+
+    border-radius: 20px;
+}
+
+
+/* CARDS */
+
+.card {
+
+    background: white;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+
+    border-radius: 18px;
+
+    border-left: 5px solid #2196f3;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0,0,0,0.08);
+}
+
+
+.card h2 {
+
+    color: #1565c0;
+
+    margin-bottom: 20px;
+
+    font-size: 21px;
+}
+
+
+/* GRID */
+
+.grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(230px, 1fr)
+        );
+
+    gap: 20px;
+}
+
+
+/* LABEL */
+
+label {
+
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+
+    color: #333;
+}
+
+
+/* INPUT */
+
+input,
+select {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border:
+        1px solid #d0dce8;
+
+    border-radius: 9px;
+
+    font-size: 15px;
+
+    background: #fafcff;
+}
+
+
+input:focus,
+select:focus {
+
+    outline: none;
+
+    border-color: #2196f3;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(33,150,243,0.12);
+}
+
+
+/* BUTTON */
+
+button {
+
+    width: 100%;
+
+    padding: 17px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1565c0,
+            #2196f3
+        );
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+button:hover {
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(33,150,243,0.3);
+}
+
+
+/* RESULT */
+
+.result {
+
+    background: white;
+
+    margin-top: 25px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 30px
+        rgba(0,0,0,0.12);
+}
+
+
+.result-icon {
+
+    font-size: 45px;
+}
+
+
+.result h2 {
+
+    margin: 10px;
+}
+
+
+.prediction {
+
+    font-size: 36px;
+
+    font-weight: bold;
+
+    color: #1565c0;
+
+    margin: 15px;
+}
+
+
+.summary {
+
+    margin-top: 25px;
+
+    padding: 20px;
+
+    background: #f5faff;
+
+    border-radius: 12px;
+
+    text-align: left;
+}
+
+
+.summary h3 {
+
+    color: #1565c0;
+
+    margin-bottom: 10px;
+}
+
+
+.summary p {
+
+    padding: 5px;
+}
+
+
+/* AGAIN */
+
+.again {
+
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 12px 20px;
+
+    background: #2196f3;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 9px;
+
+    font-weight: bold;
+}
+
+
+/* ERROR */
+
+.error {
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    background: #ffebee;
+
+    color: #c62828;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    font-weight: bold;
+}
+
+
+/* FOOTER */
+
+.footer {
+
+    text-align: center;
+
+    padding: 25px;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+.warning {
+
+    margin-top: 8px;
+
+    color: #b71c1c;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 12px;
+    }
+
+    .header {
+        padding: 25px 15px;
+    }
+
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .prediction {
+        font-size: 28px;
+    }
+
+}
